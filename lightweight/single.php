@@ -6,7 +6,7 @@
 
 				    <div class="content_wrapper page_width">                                        
                     
-	                    <div class="middle_column" id="middle_column_1">
+	                    <div class="middle_column" id="middle_column_1">   
 							
 									 <?php if (have_posts()) : ?>
 									 
@@ -19,15 +19,15 @@
 		                                           
 		                                           
 			                                            <? if ( $post_page_options['show_post_content'] == "active" ) { ?>
-														    <? the_content(); ?>
+														    <? the_content(); ?>   
 													    <? } ?> 
 	
 									 
-									           <?php endwhile; ?>
+									           <?php endwhile; ?>   
 									 
 									 <?php endif; ?>  									 
                                
-	                    </div><!-- middle_column -->    
+	                    </div><!----- middle_column ---->    
 	                    
 	                    
 	                    <div class="left_column" id="left_column_1" >

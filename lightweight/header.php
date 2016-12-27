@@ -24,7 +24,7 @@
 				
 		
 		<div class="menu_block">
-		        <div class="menu_wrapper page_width" id="menu_wrapper_1">
+		        <div class="menu_wrapper page_width" id="menu_wrapper_1">   
 		        		        
 		               <div class="menu_toggle_block">
 	                      <div class="menu_toggle_wrap lw_class_on_off" data-what="#menu_wrapper_1" data-what-class="on">                    

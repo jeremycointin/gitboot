@@ -16,7 +16,7 @@
        </style>
   </head>
   <body>
-    <a-scene antialias="true">
+    <a-scene antialias="true">   
     
           <? 
 		  $menu_pos[] = "-2 4 0";
