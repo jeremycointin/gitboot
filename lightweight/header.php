@@ -34,7 +34,7 @@
 	                      </div> 	        
 		               </div>               
 		               
-				    <div class="menu_div"><?php echo do_shortcode('[display_menu]'); ?></div>
+				    <div class="menu_div"><?php echo do_shortcode('[display_menu]'); ?></div>   
 		        </div><!-- menu_wrapper -->
 		</div><!-- menu_block -->    
 		
