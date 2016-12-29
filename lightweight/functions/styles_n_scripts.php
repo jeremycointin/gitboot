@@ -1,6 +1,7 @@
 <?
 function lw_frontend_scripts() {
 
+    wp_enqueue_style( 'boot_css', get_template_directory_uri ().'/css/bootstrap.min.css' );
     wp_enqueue_style( 'lw_style', get_template_directory_uri ().'/style.css' );
     wp_enqueue_style( 'media_queries', get_template_directory_uri ().'/css/media_queries.css' );
     
