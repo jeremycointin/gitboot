@@ -2,14 +2,14 @@
 
 <?php get_header(); ?>
 
-<? global $post_page_options; ?>
+<? global $post_page_options;  //  yoloooooooooooooooo  ?>
 
               <div class="content_block">
 
 				    <div class="content_wrapper page_width">               
 				                               
                        
-		                    <div class="middle_column" id="middle_column_1">
+		                    <div class="middle_column" id="middle_column_1">       
 								
 										 <?php if (have_posts()) : ?>
 										 
