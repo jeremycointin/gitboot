@@ -1,0 +1,767 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type="submit"] { cursor: pointer; }
+	
+/**********************************************************/
+/*********************COMMON ITEMS************************/
+
+* {
+	margin: 0;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial";
+}
+
+h1 {
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	padding: 15px;
+	font-weight: bold;
+}
+
+a {
+	color: #4285F4;
+}
+
+label {
+	display: inline-block;
+	vertical-align: top; 
+	width: 200px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+button {
+	border: 1px solid #000000;
+	display: inline-block;
+	vertical-align: top; 
+}
+
+
+/**********************************************************/
+/**********************************************************/
+
+.page_width {
+	width:  960px;
+	margin: 0 auto;
+}
+
+.sm_header_starter {
+	min-height: 125px;
+	background-color: #D3D3D3;	
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.sm_footer_starter {
+	min-height: 75px;
+	background-color: #D3D3D3;
+	padding: 15px;	
+}
+
+.sm-page {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+.sm-page .main_content {
+	margin: 0 auto; 
+	width: 960px;
+    align-items: stretch;
+    display: flex;
+    justify-content:space-between; 
+}
+
+.content_wrapper {
+	white-space: nowrap;
+    
+}
+
+.middle_column {
+	padding-top: 25px;
+	padding-bottom: 25px;	
+	white-space: normal;
+}
+
+.sm_profile_edit .middle_column {
+	width: 635px;
+	display: inline-block;
+	vertical-align: top; 
+}
+
+.right_column {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top; 
+	white-space: normal;
+	margin-left: 20px;
+}
+
+.single_created_post_wrap h1 {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px 0px 5px 0px;
+	text-transform: none;
+}
+
+
+.sm-page header, .sm-page footer {
+	margin: 0 auto; 
+	width: 960px;
+	min-height: 125px;
+	background-color: #D3D3D3;	
+}
+
+.sm-page .left_column {
+	display: inline-block;
+	vertical-align: top;
+	width: 710px;
+	padding: 15px 0;
+}
+
+.sm-page .right_column {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #F2F2F2;	
+	padding: 15px 0;
+}
+
+.sm-page input[type="submit"] {
+    cursor: pointer;
+    width: 100px;
+}
+
+.sm_field_wrap {
+	margin-bottom: 15px;
+}
+
+.sm-page button {
+	cursor: pointer;
+}
+
+.sm-page .frontend_edit_form .sm_field_wrap{
+	margin-bottom: 15px;
+}
+
+.sm-page .frontend_edit_form label{
+	width: 175px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sm-page .frontend_edit_form .profile_field {
+	width: 350px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sm-page .frontend_edit_form #sm_description {
+	height: 150px;
+}
+
+.has_error.sm_field {
+border: 1px solid red;
+}
+
+.has_error.sm_field_wrap,.errors_wrap {
+color: red;
+}
+
+.sm-page #pic_display_profile_pic {
+	width: 260px;
+	height: 260px;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-position: top center;
+}
+
+.sm-page #profile_pic {
+	width: 525px;
+}
+
+.sm-page .create_buttons_wrap {
+    display: block;
+	text-align: center;
+	width: 190px;
+	margin: 0 auto;
+}
+
+.sm-page .show_profile_button_wrap {
+    display: block;
+	text-align: center;
+	width: 190px;
+	margin: 0 auto;
+}
+
+.sm-page .create_post,.sm-page .view_post_button {
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+	height: 35px;
+	padding-top: 0px;
+	margin-bottom: 15px;
+	border: 1px solid #000000;
+	text-transform: uppercase;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	background-color: #ffffff;
+}
+
+.sm-page input[type="submit"] {
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+	height: 35px;
+	padding-top: 0px;
+	margin-bottom: 15px;
+	border: 1px solid #000000;
+	text-transform: uppercase;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	background-color: #074268;
+	color: #ffffff;
+}
+
+.sm-page .show_profile_button_wrap .sm_submit_button {
+	background-color: #074268;
+	color: #ffffff;
+}
+
+.sm-page .show_profile_button_wrap .view_post_button {
+	background-color: #074268;
+	color: #ffffff;
+}
+
+.sm-page .show_profile_button_wrap .sm_save_draft_button {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.sm-page .create_post:hover,.sm-page .view_post_button:hover {
+	color: #4285F4;
+	border: 1px solid #00307F;
+}
+
+.sm-page input[type="submit"]:hover {
+	color: #4285F4;
+	border: 1px solid #00307F;
+}
+
+.sm-page #post_delete {
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+	height: 35px;
+	padding-top: 0px;
+	margin-bottom: 15px;
+	border: 1px solid #000000;
+	text-transform: uppercase;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	background-color: #B5202D;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+.sm-page a { text-decoration: none; }
+
+
+.sm-page .frontend_post_page_manage_form .sm_field_wrap {
+	margin-bottom: 15px;
+}
+
+.sm-page .frontend_post_page_manage_form .post_date_wrap label {
+	width: 55px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sm-page .frontend_post_page_manage_form #sm_post_page_title {
+	width: 630px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+}
+
+.sm-page .wp-switch-editor {
+	padding-bottom: 20px;
+}
+
+.sm-page .display_created_posts {
+    padding: 20px;
+}
+
+.sm-page .created_posts_header {
+	margin-bottom: 15px;
+}
+
+
+.sm-page .all_created_posts_wrap {
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.sm-page .created_posts_expand {
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.sm-page .display_all .all_created_posts_wrap {
+	height: auto !important;
+	overflow: visible;
+}
+
+.sm-page .registration_form .sm_field_wrap{
+	margin-bottom: 15px;
+}
+
+.sm-page .registration_form label{
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sm-page .registration_form .profile_field {
+	width: 350px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.google_info_content_wrap {
+	padding: 15px;
+}
+
+.post_status {
+	text-transform: uppercase;
+}
+
+.text_on {
+	display: none;
+}
+
+.sm-page .post_status_wrap {
+    margin-bottom: 25px !important;	
+	padding: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.post_date_wrap {
+	text-align: left;
+	width: 250px;
+	margin: 15px auto;	
+	white-space: nowrap;
+}
+
+.post_date_inputs_wrap {
+	height: 0px;
+	overflow: hidden;	
+	transition: all 0.5s ease;
+}
+
+.on .post_date_inputs_wrap {
+	height: 200px;
+	overflow: hidden;
+	transition: all 0.5s ease;	
+}
+
+.categories_wrap {
+	text-align: left;
+	width: 250px;
+	margin: 15px auto;	
+	white-space: nowrap;
+	text-align: left;
+	line-height: 25px;
+
+}
+
+.sm-page .frontend_post_page_manage_form .post_page_options label {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+	padding-left: 30px;
+}
+
+.sm-page .frontend_post_page_manage_form .post_page_options .long_link {
+    width: 550px;
+	margin-bottom: 15px;
+}
+
+.post_date_inputs_wrap label {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px 0px 5px 0px;
+	text-transform: none;
+	width: 60px;
+}
+
+.summary_toggle {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.sm_featured_image_wrap {
+    display: block;
+    margin: 0 auto 15px auto;
+	width: 250px;
+    overflow: hidden;
+}
+
+.sm-page .frontend_post_page_manage_form label{
+	font-size: 16px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px 0px 5px 0px;
+	text-transform: none;
+}
+
+.sm-page .frontend_post_page_manage_form input {
+	margin-bottom: 15px;
+}
+
+.sm-page .frontend_post_page_manage_form input[type="file"] {
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.sm_featured_image {
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    display: none;
+    height: 150px;
+    width: 150px;
+}
+
+#mm {
+	margin-bottom: 15px;
+}
+
+.sm_featured_toggle {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.featured_image_details {
+	height: 0px;
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+
+.sm_featured_image_wrap.on .featured_image_details {
+	height: 200px;
+	transition: all 0.5s ease;
+}
+
+.sm_featured_image_wrap.on .text_on {
+	display: block;
+}
+
+.sm_featured_image_wrap.on .text_off {
+	display: none;
+}
+
+.sm_collaborators_toggle {
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.collaborators_details {
+	height: 0px;
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+
+.sm_add_collaborators.on .collaborators_details {
+	height: 600px;
+	transition: all 0.5s ease;
+}
+
+.sm_add_collaborators {
+
+    display: block;
+    margin: 0 auto 50px auto;
+	width: 250px;
+    overflow: hidden;
+    
+}
+
+#collaborator_search_results {
+	max-height: 200px;
+	overflow: scroll;
+}
+
+#added_collaborators {
+    padding-top: 15px;
+	max-height: 300px;
+	overflow: scroll;
+}
+
+.primary_buttons_wrap {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	background-color: #D3D3D3;
+	padding: 30px 25px;
+	padding-bottom: 12px;
+}
+
+.collaborator_name {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
+.remove_collaborator {
+	display: inline-block;
+	vertical-align: top;
+	color: #b5202d;
+	font-weight: bold;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.default_gm_description_pic {
+	height: 100px;
+	width: 75px;
+	background-size: cover;
+}
+
+
+/***********************************************************************************/
+/***********************************************************************************/
+/************************Upload Insert Image Form***********************************/
+
+.blanket {
+	position: fixed;
+	width:100%;
+	Height: 100%;
+	top: 0px;
+	left: 0px;
+	opacity:0.6;
+	background-color:#000000;
+	z-index: 100;
+    display: none;
+}
+
+.sm_image_insert label {
+	width: 170px;
+
+}
+
+
+.sm_image_insert {
+	position: fixed;
+	top: 200px;
+	left: 50%;
+	width: 640px;
+	height:430px;
+	background-color: #ffffff;
+	z-index: 101;
+	margin-left: -275px;
+	padding: 15px;
+	line-height: normal;
+	line-height: 20px;
+    display: none;
+}
+
+.long_set label {
+	width: 124px;
+	display:inline-block;
+}
+
+.long_set {
+	display:inline-block;
+}
+
+.image_insert label {
+    display: inline-block;
+    width: 150px;
+}
+
+.inputs {
+    display: inline-block;
+    width: 125px;
+}
+
+.small_input {
+    border: 1px solid #bababa;
+    padding: 5px;
+    width: 60px;
+}
+
+.extralarge_input {
+    border: 1px solid #bababa;
+    padding: 5px;
+    width: 455px;
+}
+
+.sm_admin_uplod_image_button {
+    background-color: #6b6b6b;
+    color: #ffffff;
+    display:block;
+    margin-bottom: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.input_set {
+    display: inline-block;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.measurement {
+    border: 1px solid #bababa;
+    padding: 4px 0;
+    width: 43px;
+}
+
+
+.insert_button {
+	border: 1px solid #000000;
+	background-color: #6B6B6B;
+	color: #ffffff;
+	display: inline-block;
+	cursor:pointer;
+	border-radius: 6px;
+	padding: 5px 10px;
+    margin: 10px 0 0 0;
+}
+
+.cancel_button {
+	border: 1px solid #000000;
+	background-color: #6B6B6B;
+	color: #ffffff;
+	display: inline-block;
+	cursor:pointer;
+	border-radius: 6px;
+	padding: 5px 10px;
+    margin: 10px 0 0 343px;
+    float: right;
+}
+
+.content_wrapper .button {
+	border: 1px solid #BABABA;
+	background-color: #ffffff;
+	padding: 5px 10px 8px 10px;
+	border-radius: 6px;
+	font-size: 14px;
+	cursor: pointer;
+	text-transform: uppercase;
+	height: 12px;
+	display: inline-block;
+	margin-left: 8px;
+	cursor:pointer;
+
+}
+
+.content_wrapper .button:hover {
+	border: 1px solid #000000;
+	background-color: #6B6B6B;
+	color: #ffffff;
+}
+
+#sm_google_map {
+	width: 300px;
+	height: 300px;
+}
+
+#sm_google_map_marker_image {
+	margin-bottom: 15px;
+}
+
+#sm_google_map_marker_title {
+	margin-bottom: 15px;
+}
+
+#sm_google_map_marker_description {
+	margin-bottom: 15px;
+	width: 350px;
+	height: 100px;
+}
+
+.sm-page .frontend_edit_form .map_options_wrap label {
+	display: block;
+	width: 100%;
+}
+
+.lat_lng_wrap {
+	margin-bottom: 15px;
+}
+
+.sm_registration .middle_column h1 {
+	padding-left: 0px;
+	margin-bottom: 15px;
+}
+
+.sm_email_verification .middle_column h1 {
+	padding-left: 0px;
+	margin-bottom: 15px;
+}
+
+.error_wrap {
+    padding-top: 15px;
+	text-transform: uppercase;
+	color: red;
+}
+
+
+
+
+/***********************************************************************************/
+/***********************************************************************************/
